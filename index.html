@@ -27,34 +27,28 @@
           <img src="images/recepty-logo.svg" alt="Recepty logo" />
         </div>
         <div class="hledani">
-          <!--
-                <label for="hledat">Hledat</label>
-                <div class="hledani-skupina">
-                    <input type="text" id="hledat" placeholder="Název receptu">
-                    <button>Hledat</button>
-                </div>
-                -->
+          <label for="hledat">Hledat</label>
+          <div class="hledani-skupina">
+            <input type="text" id="hledat" placeholder="Název receptu" />
+            <button onclick="hledat()">Hledat</button>
+          </div>
         </div>
         <div class="kategorie">
-          <!--
-                <label for="kategorie">Kategorie</label>
-                <select id="kategorie">
-                    <option value=""></option>
-                    <option>Snídaně</option>
-                    <option>Hlavní jídlo</option>
-                    <option>Dezert</option>
-                </select>
-                -->
+          <label for="kategorie">Kategorie</label>
+          <select id="kategorie" onchange="hledatKategorii()">
+            <option value=""></option>
+            <option>Snídaně</option>
+            <option>Hlavní jídlo</option>
+            <option>Dezert</option>
+          </select>
         </div>
         <div class="razeni">
-          <!--
-                <label for="razeni">Seřadit</label>
-                <select id="razeni">
-                    <option value=""></option>
-                    <option value="1">Od nejlepších</option>
-                    <option value="2">Od nejhorších</option>
-                </select>
-                -->
+          <label for="razeni">Seřadit</label>
+          <select id="razeni" onchange="serad()">
+            <option value=""></option>
+            <option value="1">Od nejlepších</option>
+            <option value="2">Od nejhorších</option>
+          </select>
         </div>
       </header>
 
